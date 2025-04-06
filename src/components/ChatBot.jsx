@@ -86,13 +86,13 @@ const ChatBot = () => {
         <Box
           sx={{
             p: 2,
-            backgroundColor: 'primary.main',
+            backgroundColor: 'primary.main2',
             color: 'white',
             borderBottom: 1,
             borderColor: 'divider',
           }}
         >
-          <Typography variant="h6">ChatBot</Typography>
+          <Typography variant="h6">Help Bot</Typography>
         </Box>
 
         <Box
@@ -115,13 +115,13 @@ const ChatBot = () => {
               }}
             >
               {!message.isUser && (
-                <Avatar sx={{ bgcolor: 'primary.main' }}>B</Avatar>
+                <Avatar sx={{ bgcolor: 'primary.main' }}>CB</Avatar>
               )}
               <Paper
                 sx={{
                   p: 2,
                   maxWidth: '70%',
-                  backgroundColor: message.isUser ? 'primary.main' : 'grey.100',
+                  backgroundColor: message.isUser ? 'secondary.main3' : 'primary.main3',
                   color: message.isUser ? 'white' : 'text.primary',
                 }}
               >
@@ -138,7 +138,7 @@ const ChatBot = () => {
                 </Typography>
               </Paper>
               {message.isUser && (
-                <Avatar sx={{ bgcolor: 'secondary.main' }}>U</Avatar>
+                <Avatar sx={{ bgcolor: 'secondary.main' }}>You</Avatar>
               )}
             </Box>
           ))}
@@ -149,11 +149,11 @@ const ChatBot = () => {
           sx={{
             p: 2,
             borderTop: 1,
-            borderColor: 'divider',
+            borderColor: 'rgb(107, 10, 80)',
             backgroundColor: 'background.paper',
           }}
         >
-          <Box sx={{ display: 'flex', gap: 1 }}>
+          <Box sx={{ display: 'flex', gap: 1, borderColor: 'rgb(107, 10, 80)' }}>
             <TextField
               fullWidth
               variant="outlined"
@@ -163,7 +163,7 @@ const ChatBot = () => {
               onKeyPress={handleKeyPress}
             />
             <IconButton
-              color="primary"
+              color="rgb(107, 10, 80)"
               onClick={handleSend}
               disabled={!input.trim()}
             >
