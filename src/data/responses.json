@@ -31,6 +31,12 @@
         "I'm here to chat! I can respond to greetings, farewells, and expressions of gratitude."
       ]
     },
+    "weather": {
+        "patterns": ["how is the weather?"],
+        "responses": [
+          "It is cold! Anything else?"
+        ]
+      },
     "default": {
       "responses": [
         "I'm not sure I understand. Could you rephrase that?",
